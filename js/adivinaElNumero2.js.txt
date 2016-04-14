@@ -1,0 +1,52 @@
+/*En esta oportunidad el juego evaluará tus
+ aptitudes a partir de la cantidad de intentos, 
+ por lo cual se informará lo siguiente:
+1° intento: “usted es un Psíquico”.
+2° intento: “excelente percepción”.
+3° intento: “Esto es suerte”.
+4° intento: “Excelente técnica”.
+5° intento: “usted está en la media”.
+Desde  6 Intentos hasta 10:”falta técnica”
+Más de 10 intentos: “afortunado en el amor!!”.*/
+
+$(document).ready(function(){
+
+	var numeroSecreto; 
+	var contadorIntentos = 0;
+	var $startButton = $(".start-button");
+	var $verifyButton = $(".verify-button");
+
+
+    $startButton.click(function(){
+        numeroSecreto = Math.floor(Math.random() * (101 - 1) + 1);
+		alert(numeroSecreto);
+    });
+
+    $verifyButton.click(function(){
+
+    	contadorIntentos++;
+
+		if( parseInt($(".number").val()) == numeroSecreto ){
+
+			if (contadorIntentos == 1) {
+				alert("Ganador! Usted es un Psíquico");
+			}else if (contadorIntentos == 2) {
+				alert("Ganador! Excelente percepción");
+			}else if (contadorIntentos == 3) { 
+				alert("Ganador! Esto es suerte");
+			}else if (contadorIntentos == 4) {
+				alert("Ganador! Excelente técnica");
+			}else if (contadorIntentos == 5) {
+				alert("Ganador! Usted está en la media");
+			}else if (contadorIntentos < 10) {
+				alert("Ganador! Falta técnica");
+			}else{
+				alert("Afortunado en el amor!!");
+			}
+		}
+
+		$(".intent").val(contadorIntentos);
+    });
+
+
+});

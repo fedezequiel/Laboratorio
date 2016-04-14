@@ -1,0 +1,231 @@
+html, body, #wrapper, #sidebar-wrapper, #sidebar-content{
+    height: 100%;
+}
+
+#wrapper{
+    display: table;
+    width: 100%;
+}
+
+#wrapper.toggled #sidebar-wrapper{
+    display: none !important;
+    margin-left: 100px;
+}
+
+#sidebar-wrapper{
+    display: table-cell;
+    width: 15%;
+    min-width: 220px;
+    font-size: 20px;
+    vertical-align: top;
+    background: #FF9900;
+    box-shadow: 4px 0px 20px #aaa;
+}
+
+#sidebar-wrapper .items-content {
+    display: block;
+}
+
+
+#sidebar-wrapper .items-content ul {
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+}
+
+#sidebar-wrapper .items-content ul li {
+    list-style-type: none;
+}
+
+#sidebar-wrapper .items-content ul li a{
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+#sidebar-wrapper .items-content ul li a:hover, .active{
+    background: white;
+    text-decoration: none !important;
+    color: #FF9900 !important;
+}
+
+#sidebar-wrapper .items-content ul li.title{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#sidebar-content{
+    display: table-cell;
+}
+
+.game-content{
+    padding: 10px;
+}
+
+.game-content .data-input-wrapper{
+    display: table;
+    width: 100%;
+}
+
+.game-content .data-input-wrapper .input-text{
+    display: block;
+    margin: 20px 10px;
+    text-align: center;
+}
+
+.game-content .data-input-wrapper .input-text input{
+    height: 50px;
+    width: 230px;
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid;
+    border-color: cornflowerblue;
+}
+
+.game-content .data-input-wrapper .reset{
+    text-align: end;
+    display: block;
+    margin: 30px 10px;
+}
+
+.game-content .data-input-wrapper .reset button {
+    width: 231px;
+    height: 40px;
+}
+
+.game-content .data-input-wrapper .machine-content, .user-content {
+    display: block;
+    text-align: center;
+}
+
+.game-content .data-input-wrapper .machine-content {
+    margin: 10px 0px 40px 0px;
+}
+
+.game-content .data-input-wrapper .machine-content .results-content {
+    position: absolute;
+    right: 0px;
+    top: 2px;
+}
+
+.game-content .data-input-wrapper .machine-content .results-content p {
+    width: 131px;
+    text-align: left;
+    display: inline-block;
+    font-size: 25px;
+    font-style: italic;
+    margin-right: 10px;
+}
+
+.game-content .data-input-wrapper .machine-content .image {
+    display: block;
+} 
+
+.game-content .data-input-wrapper .user-content .image:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+} 
+
+.game-content .data-input-wrapper .image {
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+.game-content .data-input-wrapper .image img {
+    width: 200px;
+}
+
+
+.game-content .buttons-wrapper {
+    text-align: center;
+}
+
+.game-content .buttons-wrapper .button {
+    display: inline-block;
+}
+
+.game-content .buttons-wrapper .button button {
+    width: 250px;
+    height: 50px;
+    margin: 0px 10px;   
+}
+
+.game-content .buttons-color-wrapper {
+    display: block;
+    text-align: center;
+}
+
+.game-content .buttons-color-wrapper button {
+    width: 190px;
+    height: 42px;
+    color: white;
+    font-weight: bold;
+    border-radius: 7px;
+    box-shadow: 5px 5px 7px #aaa;
+    margin: 10px 10px;
+}
+
+.game-content .buttons-color-wrapper button:hover {
+    -webkit-transform:scale(1.15); /* Safari and Chrome */
+    -moz-transform:scale(1.15); /* Firefox */
+    -ms-transform:scale(1.15); /* IE 9 */
+    -o-transform:scale(1.15); /* Opera */
+     transform:scale(1.15);
+}
+
+.game-rules {
+    margin: 20px 30px;
+}
+
+.game-rules .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.game-rules .text-content {
+    display: block;
+}
+
+.game-actions .actions-content {
+    display: block;
+    margin: 10px 30px;
+}
+
+.game-wrapper {
+    display: table;
+    width: 100%;
+}
+
+.game-wrapper .game-descriptions {    
+    display: table-cell;
+    width: 50%;
+    vertical-align: top;
+}
+
+.game-wrapper .game-animations {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.game-wrapper .game-animations .animations-image {
+    display: block;
+    padding: 10px;
+}
+
+
+.game-wrapper .game-animations .animations-image p {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.game-wrapper .game-animations .animations-image .image{
+    width: 70%;
+    max-width: 450px;
+    border-radius: 100%;
+}

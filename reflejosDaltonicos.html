@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Simple Sidebar - Start Bootstrap Template</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/simple-sidebar.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <span class=items-content>
+                    <ul class="sidebar-nav">
+                        <li class="sidebar-brand title"> <a href="index.html"> Start Bootstrap </a> </li>
+
+                        <li> <a href="adivinaElNumero.html"> Adivina el número </a> </li>
+
+                        <li> <a href="adivinaElNumero2.html"> Adivina el número 2.0 </a> </li>
+
+                        <li> <a href="agilidadAritmetica.html"> Agilidad aritmética </a> </li>
+
+                        <li> <a href="agilidadAritmetica2.html"> Agilidad aritmética V2.0 </a> </li>
+
+                        <li> <a href="piedraPapelTijera.html"> Pieda, papel, tijera </a> </li>
+
+                        <li> <a href="piedraPapelTijera2.html"> Piedra, papel, tijera V2.0 </a> </li>
+                        
+                        <li> <a class=" active" href="reflejosDaltonicos.html"> Reflejos daltónicos </a></li>
+                    </ul>
+                </span>
+            </div>
+
+            <!-- Page Content -->
+            <div id="sidebar-content" class="">
+                <div class="game-content">
+                    <span class=data-input-wrapper>
+                        <form id="FormIngreso">
+                            <span class="input-text">
+                                <input type="text" readonly id="ColorElejido">
+                            </span>
+                        </form>
+                    </span class=data-input-wrapper>
+
+                    <span class=buttons-color-wrapper>
+                        <button style="background:blue;"  class="MiBotonUTNJuego btn btn-default">Azul</button>
+
+                        <button style="background:yellow;" class="MiBotonUTNJuego btn btn-default">Amarillo</button>
+
+                        <button style="background:brown;" class="MiBotonUTNJuego btn btn-default">Marrón</button>
+                        
+                        <button style="background:green;" class="MiBotonUTNJuego btn btn-default">Verde</button>
+
+                        <button style="background:skyblue;" class="MiBotonUTNJuego btn btn-default">Celeste</button>
+                    
+                        <button style="background:red;" class="MiBotonUTNJuego btn btn-default">Rojo</button>
+
+                        <button style="background:Pink;" class="MiBotonUTNJuego btn btn-default">Rosa</button>
+                    </span>
+                </div>
+
+                <div class="game-rules">
+                    <span class="title"> Enunciado:</span>
+                    <span class=text-content>
+                        <p class="text">
+                            En la pantalla se mostrarán 6 botones de distintos colores,  al comenzar el juego se mostrara el texto de un color entre los 6 posibles para que el jugador sepa que botón tocar .Al tocar el botón correcto se informara cuanto tiempo tardo.
+                        </p>
+                    </span>
+                </div>
+
+                <div class="game-actions">
+                    <span class="actions-content">
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/reflejosDAltonicos.js"></script>
+
+        <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+        </script>
+
+    </body>
+</html>

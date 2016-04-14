@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Simple Sidebar - Start Bootstrap Template</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/simple-sidebar.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <span class=items-content>
+                    <ul class="sidebar-nav">
+                        <li class="sidebar-brand title"> <a class=" active" href="index.html"> Start Bootstrap </a> </li>
+
+                        <li> <a href="adivinaElNumero.html"> Adivina el número </a> </li>
+
+                        <li> <a href="adivinaElNumero2.html"> Adivina el número 2.0 </a> </li>
+
+                        <li> <a href="agilidadAritmetica.html"> Agilidad aritmética </a> </li>
+
+                        <li> <a href="agilidadAritmetica2.html"> Agilidad aritmética V2.0 </a> </li>
+
+                        <li> <a href="piedraPapelTijera.html"> Pieda, papel, tijera </a> </li>
+
+                        <li> <a href="piedraPapelTijera2.html"> Piedra, papel, tijera V2.0 </a> </li>
+                        
+                        <li> <a href="reflejosDaltonicos.html"> Reflejos daltónicos </a></li>
+                    </ul>
+                </span>
+            </div>
+
+            <!-- Page Content -->
+
+            <div id="sidebar-content" class="">
+                <div class="game-content">
+
+                </div>
+
+                <div class="game-rules">
+                    <span class="title"> Simple Sidebar:</span>
+                    <span class=text-content>
+                        <p class="text">
+                            This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.
+
+                            Make sure to keep all page content within the #page-content-wrapper.
+                        </p>
+                    </span>
+                </div>
+
+                <div class="game-actions">
+                    <span class="actions-content">
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+        </script>
+
+    </body>
+</html>

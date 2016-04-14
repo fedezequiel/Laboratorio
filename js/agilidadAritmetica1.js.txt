@@ -1,0 +1,32 @@
+/*Debemos mostrar dos números Random  del 1 al 10 
+y una de las cuatro operaciones básicas (suma, resta,
+ división o multiplicación) para realizar entre estos
+ dos números, estas operaciones también serán Random.
+ En el cuadro de texto resultado el jugador debe ingresar
+ el resultado de la operación y presionar el botón Aceptar.
+se debe informar si el resultado es el correcto o no.
+*/
+
+$(document).ready(function(){
+	var respuesta;
+	var $firstNumber = $(".first-number");
+	var $operator = $(".operator");
+	var $secondNumber = $(".second-number");
+	var $responseButton = $(".response-button");
+	var operators = ["+","-","/","*"];
+
+	$firstNumber.val(Math.floor(Math.random() * 10));
+	$secondNumber.val(Math.floor(Math.random() * 10));
+	$operator.val(operators[Math.floor(Math.random()*4)]);
+
+	var respuesta = eval($firstNumber.val() + $operator.val() + $secondNumber.val());
+
+	$responseButton.click(function(){
+
+		if (parseInt($("#Respuesta").val()) == respuesta) {
+			alert("Correcto!");
+		}else{
+			alert("Intente de nuevo!");
+		}
+	});
+});

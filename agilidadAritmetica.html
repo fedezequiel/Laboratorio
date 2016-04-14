@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Simple Sidebar - Start Bootstrap Template</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/simple-sidebar.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+            <div id="sidebar-wrapper">
+                <span class=items-content>
+                    <ul class="sidebar-nav">
+                        <li class="sidebar-brand title"> <a href="index.html"> Start Bootstrap </a> </li>
+
+                        <li> <a href="adivinaElNumero.html"> Adivina el número </a> </li>
+
+                        <li> <a href="adivinaElNumero2.html"> Adivina el número 2.0 </a> </li>
+
+                        <li> <a class="active" href="agilidadAritmetica.html"> Agilidad aritmética </a> </li>
+
+                        <li> <a href="agilidadAritmetica2.html"> Agilidad aritmética V2.0 </a> </li>
+
+                        <li> <a href="piedraPapelTijera.html"> Pieda, papel, tijera </a> </li>
+
+                        <li> <a href="piedraPapelTijera2.html"> Piedra, papel, tijera V2.0 </a> </li>
+                        
+                        <li> <a href="reflejosDaltonicos.html"> Reflejos daltónicos </a></li>
+                    </ul>
+                </span>
+            </div>
+
+            <!-- Page Content -->
+            <div id="sidebar-content" class="">
+                <div class="game-content">
+                    <div class=data-input-wrapper>
+                        <form id="FormIngreso">
+                            <span class="input-text">
+                                <input type="text" readonly id="PrimerNumero" class="first-number">
+                            </span>
+                            <span class="input-text">
+                                <input type="text" readonly id="Operador" class="operator">
+                            </span>
+                            <span class="input-text">
+                                <input type="text" readonly id="SegundoNumero" class="second-number">
+                            </span>
+                            <span class="input-text">
+                                <input type="text"  id="Respuesta">
+                            </span>
+                        </form>
+                    </div>
+
+                    <div class="buttons-wrapper">
+                        <span class=button>
+                            <button class="MiBotonUTN verify-button btn btn-default">Verificar</button>
+                        </span>
+                        <span class="button">
+                            <button class="MiBotonUTN start-button btn btn-default">Comenzar</button>
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="game-rules">
+                    <span class="title">Enunciado:</span>
+                    <span class=text-content>
+                        <p class="text">
+                            Debemos mostrar dos números Random  del 1 al 10 y una de las cuatro operaciones básicas (suma, resta, división o multiplicación) para realizar entre estos dos números, estas operaciones también serán Random. En el cuadro de texto resultado el jugador debe ingresar el resultado de la operación y presionar el botón  Aceptar.
+                            se debe informar si el resultado es el correcto o no.
+                        </p>
+                    </span>
+                </div>
+
+                <div class="game-actions">
+                    <span class="actions-content">
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/agilidadAritmetica1.js"></script>
+
+        <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Simple Sidebar - Start Bootstrap Template</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/simple-sidebar.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <span class=items-content>
+                    <ul class="sidebar-nav">
+                        <li class="sidebar-brand title"> <a href="index.html"> Start Bootstrap </a> </li>
+
+                        <li> <a href="adivinaElNumero.html"> Adivina el número </a> </li>
+
+                        <li> <a class="active" href="adivinaElNumero2.html"> Adivina el número 2.0 </a> </li>
+
+                        <li> <a href="agilidadAritmetica.html"> Agilidad aritmética </a> </li>
+
+                        <li> <a href="agilidadAritmetica2.html"> Agilidad aritmética V2.0 </a> </li>
+
+                        <li> <a href="piedraPapelTijera.html"> Pieda, papel, tijera </a> </li>
+
+                        <li> <a href="piedraPapelTijera2.html"> Piedra, papel, tijera V2.0 </a> </li>
+                        
+                        <li> <a href="reflejosDaltonicos.html"> Reflejos daltónicos </a></li>
+                    </ul>
+                </span>
+            </div>
+
+            <!-- Page Content -->
+            <div id="sidebar-content" class="">
+                <div class="game-content">
+                    <div class=data-input-wrapper>
+                        <form id="FormIngreso">
+                            <span class="input-text">
+                                <input type="text"  placeholder="Ingrese número" id="numero" class="number">
+                            </span>
+                            <span class="input-text">
+                                <input type="text"  placeholder="intentos" readonly id="intentos" class="intent">
+                            </span>
+                        </form>
+                    </div>
+
+                    <div class="buttons-wrapper">
+                        <span class=button>
+                            <button class="MiBotonUTN verify-button btn btn-default">Verificar</button>
+                        </span>
+                        <span class="button">
+                            <button class="MiBotonUTN start-button btn btn-default">Comenzar</button>
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="game-rules">
+                    <span class="title">Enunciado:</span>
+                    <span class=text-content>
+                        <p class="text">
+                            1.  Adivina el número (v 2.0):
+                            En esta oportunidad el juego evaluará tus aptitudes a partir de la cantidad de intentos, por lo cual se informará lo siguiente:
+                            <br>    1° intento: “usted es un Psíquico”.
+                            <br>    2° intento: “excelente percepción”.
+                            <br>    3° intento: “Esto es suerte”.
+                            <br>    4° intento: “Excelente técnica”.
+                            <br>    5° intento: “usted está en la media”.
+                            <br>    Desde  6 Intentos hasta 10:”falta técnica”
+                            <br>    Más de 10 intentos: “afortunado en el amor!!”.
+                        </p>
+                    </span>
+                </div>
+
+                <div class="game-actions">
+                    <span class="actions-content">
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/adivinaElNumero2.js"></script>
+
+        <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+        </script>
+
+    </body>
+</html>

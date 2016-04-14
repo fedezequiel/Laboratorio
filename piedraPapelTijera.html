@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Simple Sidebar - Start Bootstrap Template</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/simple-sidebar.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <span class=items-content>
+                    <ul class="sidebar-nav">
+                        <li class="sidebar-brand title"> <a href="index.html"> Start Bootstrap </a> </li>
+
+                        <li> <a href="adivinaElNumero.html"> Adivina el número </a> </li>
+
+                        <li> <a href="adivinaElNumero2.html"> Adivina el número 2.0 </a> </li>
+
+                        <li> <a href="agilidadAritmetica.html"> Agilidad aritmética </a> </li>
+
+                        <li> <a href="agilidadAritmetica2.html"> Agilidad aritmética V2.0 </a> </li>
+
+                        <li> <a class="active" href="piedraPapelTijera.html"> Pieda, papel, tijera </a> </li>
+
+                        <li> <a href="piedraPapelTijera2.html"> Piedra, papel, tijera V2.0 </a> </li>
+                        
+                        <li> <a href="reflejosDaltonicos.html"> Reflejos daltónicos </a></li>
+                    </ul>
+                </span>
+            </div>
+
+            <!-- Page Content -->
+
+            <div id="sidebar-content" class="">
+                <div class="game-content">
+                    <div class=data-input-wrapper>
+                        <form id="FormIngreso">
+                            <span class="machine-content">
+                                <span class="image">
+                                    <img class="machine-image" src="img/pregunton.png" >
+                                </span>
+                            </span>
+
+                            <span class="respuesta user-content">
+                                 <span class="image">
+                                   <img class="user-image" src="img/piedra.png">
+                                </span>
+
+                                <span class="image">
+                                    <img class="user-image" src="img/papel.png">
+                                </span>
+
+                                <span class="image">
+                                    <img class="user-image"  src="img/tijera.png">
+                                </span>
+                            </span>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="game-rules">
+                    <span class="title">Enunciado:</span>
+                    <span class=text-content>
+                        <p class="text">
+                            3.  Piedra, Papel o Tijera (v 1.0):
+                            </br>Al comenzar el juego generaremos un número RANDOM del 1 al 3 para la selección de la máquina, siendo 1 para “piedra”, el 2 para “papel” y 3 para “tijera”.
+                            </br>El jugador seleccionará una imagen correspondiente a su opción  y le informaremos si ganó, empató o perdió
+                        </p>
+                    </span>
+                </div>
+
+                <div class="game-actions">
+                    <span class="actions-content">
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/piedraPapelTijera1.js"></script>
+
+        <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+        </script>
+
+    </body>
+</html>
