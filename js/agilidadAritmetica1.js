@@ -23,7 +23,7 @@ $(document).ready(function(){
 	$verifyButton.on('click', function(){
 
 		if (parseInt($respuesta.val()) == respuesta) {
-			$('.userMessage').text("Respuesta correcta!");
+			$userMessage.text("Respuesta correcta!");
 
 		}else if($respuesta.val() == ""){
 			$userMessage.text("Vamos, puedes hacerlo!");

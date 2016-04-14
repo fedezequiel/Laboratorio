@@ -5,6 +5,7 @@ html, body, #wrapper, #sidebar-wrapper, #sidebar-content{
 #wrapper{
     display: table;
     width: 100%;
+    background: white;
 }
 
 #wrapper.toggled #sidebar-wrapper{
@@ -184,6 +185,16 @@ html, body, #wrapper, #sidebar-wrapper, #sidebar-content{
     font-size: 20px;
 }
 
+.game-content .timer-content {
+    position: absolute;
+    top: 20px;
+    box-shadow: 0px 5px 16px 3px #888;
+}
+
+.game-content .timer-content #counter{
+    margin: 0px;
+}
+
 .game-test {
     display: block;
     color: white;
@@ -248,3 +259,88 @@ html, body, #wrapper, #sidebar-wrapper, #sidebar-content{
     max-width: 450px;
     border-radius: 100%;
 }
+
+
+#sign-in{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: table;
+    background: #FF9900;
+}
+
+#sign-in .sign-in-wrapper{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#sign-in .sign-in-wrapper .sign-in-content {
+    display: inline-table;
+}
+
+#sign-in .sign-in-wrapper .sign-in-content .data-input{
+    display: table-cell;
+    margin: 10px;
+    padding: 10px;
+}
+
+#sign-in .sign-in-wrapper .sign-in-content .button-content{
+    vertical-align: middle;
+    padding: 10px;
+    display: table-cell;
+}
+
+.slideUp-animation {
+  -webkit-animation-name: slideUp;
+  animation-name: slideUp;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -moz-transform-origin: top;
+  -ms-transform-origin: top;
+  -o-transform-origin: top;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    opacity: 1;
+  }
+
+  100% {
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    opacity: 0;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    opacity: 1;
+  }
+
+  100% {
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    opacity: 0;
+  }
+}
+
