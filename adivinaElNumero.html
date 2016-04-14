@@ -48,20 +48,28 @@
                                 <input type="text"  placeholder="Ingrese número" id="numero" class="number">
                             </span>
                             <span class="input-text">
-                                <input type="text"  placeholder="intentos" readonly id="intentos" class="intent">
+                                <input type="text"  placeholder="Intentos" readonly id="intentos" class="intent">
                             </span>
                         </form>
                     </div>
 
                     <div class="buttons-wrapper">
-                        <span class=button>
-                            <button class="MiBotonUTN verify-button btn btn-default">Verificar</button>
+                        <span class="button">
+                            <button class="MiBotonUTN verify-button btn btn-default" disabled="true">Verificar</button>
                         </span>
                         <span class="button">
-                            <button class="MiBotonUTN start-button btn btn-default">Comenzar</button>
+                            <button class="MiBotonUTN start-button btn btn-default" >Comenzar</button>
                         </span>
                     </div>
 
+                    <div class="message-content">
+                        <span class="user-message"> Empecemos a jugar! </span>                    
+                    </div>
+                </div>
+
+                <div class="game-test" style="display:none">
+                    <span class="text">Value: </span>
+                    <span class="value"> </span>
                 </div>
 
                 <div class="game-rules">

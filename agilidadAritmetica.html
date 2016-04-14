@@ -44,27 +44,31 @@
                     <div class=data-input-wrapper>
                         <form id="FormIngreso">
                             <span class="input-text">
-                                <input type="text" readonly id="PrimerNumero" class="first-number">
+                                <input type="text" readonly id="PrimerNumero" class="first-number" placeholder="Número">
                             </span>
                             <span class="input-text">
-                                <input type="text" readonly id="Operador" class="operator">
+                                <input type="text" readonly id="Operador" class="operator" placeholder="Operación">
                             </span>
                             <span class="input-text">
-                                <input type="text" readonly id="SegundoNumero" class="second-number">
+                                <input type="text" readonly id="SegundoNumero" class="second-number" placeholder="Número">
                             </span>
                             <span class="input-text">
-                                <input type="text"  id="Respuesta">
+                                <input type="text"  id="Respuesta" placeholder="Respuesta">
                             </span>
                         </form>
                     </div>
 
                     <div class="buttons-wrapper">
                         <span class=button>
-                            <button class="MiBotonUTN verify-button btn btn-default">Verificar</button>
+                            <button class="MiBotonUTN verify-button btn btn-default" disabled="true">Verificar</button>
                         </span>
                         <span class="button">
                             <button class="MiBotonUTN start-button btn btn-default">Comenzar</button>
                         </span>
+                    </div>
+
+                      <div class="message-content">
+                        <span class="user-message"> Empecemos a jugar! </span>                    
                     </div>
 
                 </div>

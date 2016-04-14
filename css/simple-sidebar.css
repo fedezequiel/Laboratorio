@@ -56,6 +56,7 @@ html, body, #wrapper, #sidebar-wrapper, #sidebar-content{
 
 #sidebar-content{
     display: table-cell;
+    padding: 0px 20px;
 }
 
 .game-content{
@@ -85,7 +86,7 @@ html, body, #wrapper, #sidebar-wrapper, #sidebar-content{
 .game-content .data-input-wrapper .reset{
     text-align: end;
     display: block;
-    margin: 30px 10px;
+    margin: 0px 10px;
 }
 
 .game-content .data-input-wrapper .reset button {
@@ -150,7 +151,7 @@ html, body, #wrapper, #sidebar-wrapper, #sidebar-content{
 .game-content .buttons-wrapper .button button {
     width: 250px;
     height: 50px;
-    margin: 0px 10px;   
+    margin: 5px 10px;   
 }
 
 .game-content .buttons-color-wrapper {
@@ -176,8 +177,26 @@ html, body, #wrapper, #sidebar-wrapper, #sidebar-content{
      transform:scale(1.15);
 }
 
+.game-content .message-content {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.game-test {
+    display: block;
+    color: white;
+    background: #CCC;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
 .game-rules {
-    margin: 20px 30px;
+    margin: 20px 0px;
 }
 
 .game-rules .title {
@@ -191,7 +210,7 @@ html, body, #wrapper, #sidebar-wrapper, #sidebar-content{
 
 .game-actions .actions-content {
     display: block;
-    margin: 10px 30px;
+    margin: 10px 0px;
 }
 
 .game-wrapper {
